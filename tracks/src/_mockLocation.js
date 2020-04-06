@@ -22,7 +22,7 @@ let counter = 0
 setInterval(() => {
   Location.EventEmitter.emit('Expo.locationChanged', {
     watchId: Location._getCurrentWatchId(),
-    Location: getLocation(counter)
+    location: getLocation(counter)
   })
   counter++
 }, 1000)

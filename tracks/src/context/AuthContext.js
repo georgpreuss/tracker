@@ -10,7 +10,6 @@ const authReducer = (state, action) => {
     case 'signin':
       return { token: action.payload, errorMessage: '' }
     case 'clear_error_message':
-      console.log('cleared errormessage')
       return { ...state, errorMessage: '' }
     case 'signout':
       return { token: null, errorMessage: '' }
